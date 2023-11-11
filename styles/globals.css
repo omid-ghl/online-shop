@@ -25,9 +25,9 @@
   }
 
   .dark {
-    --color-bg: 15, 23, 42; /* #0f172a*/
-    --color-bg-side: 30, 41, 59; /* #1e293b*/
-    --digital-category-bgc: #0d4c76;
+    --color-bg: 26, 26, 26; /* #1a1a1a*/
+    --color-bg-side: 70, 70, 70; /* #464646*/
+    --digital-category-bgc: #666666;
     --fashion-category-bgc: #892a19;
     --beauty-category-bgc: #6d305f;
     --sport-category-bgc: #650606;
