@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   i18n: {
     locales: ["en", "fa"],
-    defaultLocale: "en",
+    defaultLocale: "fa",
     localeDetection: false,
   },
   images: {

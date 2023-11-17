@@ -4,6 +4,7 @@ import { useLanguage } from "../../../hooks/useLanguage";
 import { NextArrow, PrevArrow } from "./CarouselBoxArrows";
 import Slider from "react-slick";
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
+import { useTheme } from "next-themes";
 
 interface Props {
   title: string;
@@ -20,9 +21,16 @@ const CarouselBox: React.FC<Props> = ({
   full,
 }) => {
   const { t } = useLanguage();
+  const { theme } = useTheme();
 
   const settings = {
-    className: ` px-4 ${full ? "bg-palette-fill" : "bg-[#37bccef9]"}`,
+    className: ` px-4 ${
+      full
+        ? "bg-palette-fill"
+        : theme === "dark"
+        ? "bg-[#5b5b5bf9]"
+        : "bg-[#dadadaf9]"
+    }`,
     infinite: true,
     speed: 600,
     centerPadding: "60px",
@@ -68,17 +76,19 @@ const CarouselBox: React.FC<Props> = ({
   return (
     <div
       className={`w-[100%] mx-auto my-8 flex rounded-md ${
-        full ? "flex-col" : "bg-[#37bccef9]"
+        full
+          ? "flex-col"
+          : theme === "dark"
+          ? "bg-[#5b5b5bf9]"
+          : "bg-[#dadadaf9]"
       }`}
     >
       <div
         className={`flex flex-col items-center justify-around flex-grow text-sm sm:text-base  bg-cover bg-no-repeat bg-center rounded-md backdrop-blur-md ${className}`}
       >
         <h2
-          className={`text-lg  sm:text-xl font-bold ${
-            full
-              ? "text-palette-base self-start"
-              : "text-palette-primary text-center"
+          className={`text-lg  sm:text-xl font-bold text-white ${
+            full ? "self-start" : "text-center"
           } `}
         >
           {t[`${title}`]}
