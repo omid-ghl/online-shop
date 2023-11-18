@@ -10,15 +10,15 @@ import { useLanguage } from "../../hooks/useLanguage";
 import NextNProgress from "nextjs-progressbar";
 
 const Layout: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
-  const { locale } = useLanguage();
+  const { t, locale } = useLanguage();
   return (
     <Provider store={store}>
       <ThemeProvider enableSystem={true} attribute="class">
         <Head>
-          <title>Online Shop</title>
+          <title>{t.productName}</title>
         </Head>
         <div className="flex flex-col min-h-[100vh]">
-          <NextNProgress height={7} />
+          <NextNProgress height={2} />
           <Header />
           <main className="flex-grow  md:mt-40">{children}</main>
           <Footer />

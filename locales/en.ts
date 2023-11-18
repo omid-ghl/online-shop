@@ -1,4 +1,5 @@
 const en: { [key: string]: string } = {
+  productName: "Online Shop",
   mainPage: "Online Shop Main Page",
   search: "Search",
   login: "Login",
@@ -21,6 +22,7 @@ const en: { [key: string]: string } = {
   seeAllProduct: "See All product in this category",
   offer: "Offers and Discounts",
   bestSells: "The Best-Sells",
+  articles: "Articles",
   mainMenu: "Main Menu",
   language: "Language: ",
   fa: "فارسی - Fa",
@@ -238,5 +240,6 @@ const en: { [key: string]: string } = {
   myName: "Zahra Mirzaei",
   cafeDX: "Work is meant to improve life, not the opposite.",
   productAddedToCartMsg: "Product added to cart successfully",
+  more: "More",
 };
 export default en;

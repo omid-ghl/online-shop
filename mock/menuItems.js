@@ -1,7 +1,7 @@
 import { BsLaptop, BsBook } from "react-icons/bs";
 import { IoShirtOutline, IoShirtSharp } from "react-icons/io5";
 import { MdOutlineToys } from "react-icons/md";
-import { RiHeartPulseLine, RiFireLine } from "react-icons/ri";
+import { RiHeartPulseLine, RiFireLine, RiStickyNoteLine } from "react-icons/ri";
 import { AiOutlineHome, AiOutlinePercentage } from "react-icons/ai";
 import { BiFootball } from "react-icons/bi";
 
@@ -102,4 +102,5 @@ export default menuItems;
 export const extraMenu = [
   { title: "offer", icon: AiOutlinePercentage, href: "/offers" },
   { title: "bestSells", icon: RiFireLine, href: "/" },
+  { title: "articles", icon: RiStickyNoteLine, href: "/articles" },
 ];

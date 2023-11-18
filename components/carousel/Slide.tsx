@@ -15,7 +15,7 @@ const Slide: React.FC<Props> = ({ title, description, bgImg, url }) => {
   return (
     <>
       <div
-        className={`relative w-[100%] h-[50vh] md:h-[70vh] bg-cover bg-center bg-no-repeat`}
+        className={`relative w-[100%] h-[50vh] md:h-[70vh] bg-cover bg-center bg-no-repeat !rounded-2xl`}
         style={{ backgroundImage: `${bgImg}` }}
       >
         <Link href={url}>

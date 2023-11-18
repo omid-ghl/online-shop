@@ -1,5 +1,6 @@
 const fa: { [key: string]: string } = {
-  mainPage: "صفحه اصلی Online Shop",
+  productName: "آنلاین شاپ",
+  mainPage: "صفحه اصلی آنلاین شاپ",
   search: "جستجو",
   login: "ورود",
   signIn: "ثبت‌نام",
@@ -27,6 +28,7 @@ const fa: { [key: string]: string } = {
   seeAllProduct: "دیدن تمام محصولات این دسته",
   offer: "پیشنهادات و تخفیف‌های ویژه",
   bestSells: "پرفروش‌ترین‌ها",
+  articles: "مقاله ها",
   mainMenu: "منو‌ی اصلی",
   digital: "کالای دیجیتال",
   laptop: "لپ تاپ و لوازم جانبی",
@@ -138,10 +140,10 @@ const fa: { [key: string]: string } = {
   romanoTitle: "آجیل فروشی رومانو",
   romanoDescription: "بهترین آجیل فروشی غرب تهران لذت خرید خوب را با ما بچشید",
   popularBrands: "برندهای محبوب",
-  zishopMap: "نقشه Online Shop",
+  zishopMap: "نقشه آنلاین شاپ",
   aboutUs: "دربارۀ ما",
   contactUs: "تماس با ما",
-  saleInZishop: "فروش در Online Shop",
+  saleInZishop: "فروش در آنلاین شاپ",
   careerOpportunities: "فرصت‌های شغلی",
   customerServices: "خدمات مشتریان",
   commonQuestions: "سؤالات متداول",
@@ -233,5 +235,6 @@ const fa: { [key: string]: string } = {
   myName: "امید غلامی",
   cafeDX: "کار برای بهبود زندگی است نه برعکس.",
   productAddedToCartMsg: "محصول با موفقیت به سبد خرید اضافه شد",
+  more: "بیشتر",
 };
 export default fa;

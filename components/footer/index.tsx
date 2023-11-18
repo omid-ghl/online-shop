@@ -22,7 +22,7 @@ const Footer = () => {
           {t.copyRight}
           <BsFillSuitHeartFill
             style={{
-              color: "#ee384e",
+              color: "#547acc",
               margin: "0 0.3rem 0 0.3rem",
               fontSize: "1rem",
               display: "inline",
@@ -36,7 +36,7 @@ const Footer = () => {
               display: "inline",
               verticalAlign: "top",
               fontSize: "0.8rem",
-              color: "#A71B4A",
+              color: "#547aaa",
             }}
           />
           {t.cafeDX}
@@ -45,7 +45,7 @@ const Footer = () => {
               display: "inline",
               verticalAlign: "top",
               fontSize: "0.8rem",
-              color: "#A71B4A",
+              color: "#547aff",
             }}
           />
           &nbsp;

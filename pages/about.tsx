@@ -18,7 +18,7 @@ const About: NextPage = () => {
               display: "inline",
               verticalAlign: "top",
               fontSize: "0.8rem",
-              color: "#A71B4A",
+              color: "#547acc",
             }}
           />
           {t.cafeDX}
@@ -27,7 +27,7 @@ const About: NextPage = () => {
               display: "inline",
               verticalAlign: "top",
               fontSize: "0.8rem",
-              color: "#A71B4A",
+              color: "#547acc",
             }}
           />
           &nbsp;
