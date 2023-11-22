@@ -35,7 +35,7 @@ const EnteringBox: React.FC<Props> = ({
           name: userNameRef.current?.value,
           password: passwordRef.current?.value,
           email: emailRef.current?.value,
-          isAdmin: false,
+          isAdmin: true,
         };
       } else {
         user = {

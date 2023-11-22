@@ -25,8 +25,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const products = await client.fetch(query);
   const paths = products.map((product: ISubCategoryPathsParams) => ({
     params: {
-      category: product.category.toString(),
-      subCategory: product.subCategory.toString(),
+      category: product?.category?.toString(),
+      subCategory: product?.subCategory?.toString(),
     },
   }));
   return {

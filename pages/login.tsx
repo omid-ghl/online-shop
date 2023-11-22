@@ -28,6 +28,7 @@ const Login: NextPage = () => {
         email,
         password,
       });
+      console.log(getError(data));
       dispatch(userInfoActions.userLogin(data));
       jsCookie.set("userInfo", JSON.stringify(data));
       router.push("/");

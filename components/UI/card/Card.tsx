@@ -21,7 +21,7 @@ const Card: React.FC<Props> = ({ product }) => {
           <div className="w-1/2 md:w-full relative bg-slate-400/30 px-1 md:px-6 py-2 rounded-bl-xl rounded-tl-xl md:rounded-tr-xl md:rounded-bl-none rtl:order-2 rtl:md:order-none flex flex-col justify-between items-center">
             <div className="flex items-center h-full">
               <Image
-                src={urlFor(product?.image[0]).url()}
+                src={urlFor(product?.image[0])?.url()}
                 width={280}
                 height={300}
                 alt={product.name}

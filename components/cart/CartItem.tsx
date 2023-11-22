@@ -49,7 +49,7 @@ const CartItem: React.FC<Props> = ({ product }) => {
           <a className="flex flex-wrap sm:flex-nowrap justify-center items-center flex-grow">
             <div className="sm:min-w-[100px] md:min-w-[130px]">
               <Image
-                src={urlFor(product?.image[0]).url()}
+                src={urlFor(product?.image[0])?.url()}
                 width={200}
                 height={200}
                 alt={product.name}

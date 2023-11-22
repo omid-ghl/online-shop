@@ -40,7 +40,7 @@ const FavoriteItem: React.FC<Props> = ({ product }) => {
           <div className="text-center">
             {product?.image[0] && (
               <Image
-                src={urlFor(product?.image[0]).url()}
+                src={urlFor(product?.image[0])?.url()}
                 alt="laptop image"
                 width={200}
                 height={185}
